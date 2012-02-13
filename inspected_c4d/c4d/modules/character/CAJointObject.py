@@ -2,12 +2,12 @@
 """
 c4d.modules.character.CAJointObject
 
-Auto-generated stub by inspect_c4d
+Important: these are not real files. They are automatically generated to
+ease code completion only.
 """
 
 class CAJointObject(object):
     def __init__(self, *args, **kwargs):
-
         pass
 
 

@@ -1,4 +1,4 @@
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def FilterPluginList(*args, **kwargs):
     pass
@@ -86,7 +86,7 @@ def WritePluginInfo(*args, **kwargs):
 
 def WriteRegInfo(*args, **kwargs):
     pass
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 BaseData
 BaseDrawHelp
@@ -106,7 +106,7 @@ ShaderData
 TagData
 ToolData
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = 'This module helps you to create plugins.'
 __name__ = 'c4d.plugins'
 __package__ = None

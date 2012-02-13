@@ -2,12 +2,12 @@
 """
 c4d.modules.thinkingparticles.TP_PGroup
 
-Auto-generated stub by inspect_c4d
+Important: these are not real files. They are automatically generated to
+ease code completion only.
 """
 
 class TP_PGroup(object):
     def __init__(self, *args, **kwargs):
-
         pass
 
 

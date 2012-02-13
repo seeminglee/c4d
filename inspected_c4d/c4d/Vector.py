@@ -2,16 +2,14 @@
 """
 c4d.Vector
 
-Auto-generated stub by inspect_c4d
+Important: these are not real files. They are automatically generated to
+ease code completion only.
 """
 
 class Vector(object):
     def __init__(self, *args, **kwargs):
-
         self.x = <attribute 'x' of 'c4d.Vector' objects>
-
         self.y = <attribute 'y' of 'c4d.Vector' objects>
-
         self.z = <attribute 'z' of 'c4d.Vector' objects>
 
 

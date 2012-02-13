@@ -1,4 +1,4 @@
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def GeExecuteFile(*args, **kwargs):
     pass
@@ -47,13 +47,13 @@ def ShowInFinder(*args, **kwargs):
 
 def WriteHyperFile(*args, **kwargs):
     pass
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 ByteSeq
 HyperFile
 MemoryFileStruct
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = 'Module to access a data storage device.'
 __name__ = 'c4d.storage'
 __package__ = None

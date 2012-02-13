@@ -1,8 +1,8 @@
-# Modules-----------
+# Modules ----------------------------------------------------
 '''
 builder
 '''
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 CAJointObject
 CAMorph
@@ -10,7 +10,7 @@ CAMorphNode
 CAPoseMorphTag
 CAWeightTag
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = 'Module for character animation.'
 __name__ = 'c4d.modules.character'
 __package__ = None

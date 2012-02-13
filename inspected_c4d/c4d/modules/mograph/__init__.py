@@ -1,4 +1,4 @@
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def GeGetMoData(*args, **kwargs):
     pass
@@ -8,12 +8,12 @@ def GetMoDataDefault(*args, **kwargs):
 
 def GetMoDataDefaultType(*args, **kwargs):
     pass
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 FalloffDataData
 MoData
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = 'Module for MoGraph.'
 __name__ = 'c4d.modules.mograph'
 __package__ = None

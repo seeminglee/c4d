@@ -2,12 +2,12 @@
 """
 c4d.plugins.ShaderData
 
-Auto-generated stub by inspect_c4d
+Important: these are not real files. They are automatically generated to
+ease code completion only.
 """
 
 class ShaderData(object):
     def __init__(self, *args, **kwargs):
-
         pass
 
 

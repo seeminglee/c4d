@@ -1,4 +1,4 @@
-# Modules-----------
+# Modules ----------------------------------------------------
 '''
 bodypaint
 character
@@ -9,7 +9,7 @@ particles
 render
 thinkingparticles
 '''
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def CheckAR(*args, **kwargs):
     pass
@@ -31,7 +31,7 @@ def CheckSketch(*args, **kwargs):
 
 def CheckTP(*args, **kwargs):
     pass
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = ''
 __name__ = 'c4d.modules'
 __package__ = None

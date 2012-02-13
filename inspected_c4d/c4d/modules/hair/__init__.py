@@ -1,4 +1,4 @@
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 HairGuides
 HairLibrary
@@ -7,7 +7,7 @@ HairSelectionTag
 HairTangentTag
 HairVertexMapTag
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = 'The module for hair.'
 __name__ = 'c4d.modules.hair'
 __package__ = None

@@ -1,8 +1,8 @@
-# Modules-----------
+# Modules ----------------------------------------------------
 '''
 noise
 '''
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def Bias(*args, **kwargs):
     pass
@@ -156,7 +156,7 @@ def VectorSum(*args, **kwargs):
 
 def VectorToHPB(*args, **kwargs):
     pass
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 GeRayCollider
 Neighbor
@@ -164,7 +164,7 @@ SplineHelp
 SplineLengthData
 ViewportSelect
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = ''
 __name__ = 'c4d.utils'
 __package__ = None

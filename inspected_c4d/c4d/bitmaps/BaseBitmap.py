@@ -2,12 +2,12 @@
 """
 c4d.bitmaps.BaseBitmap
 
-Auto-generated stub by inspect_c4d
+Important: these are not real files. They are automatically generated to
+ease code completion only.
 """
 
 class BaseBitmap(object):
     def __init__(self, *args, **kwargs):
-
         pass
 
 

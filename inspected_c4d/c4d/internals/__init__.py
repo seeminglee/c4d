@@ -1,4 +1,4 @@
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def CheckOwnership(*args, **kwargs):
     pass
@@ -41,7 +41,7 @@ def SetDefaultEncoding(*args, **kwargs):
 
 def SetOwnership(*args, **kwargs):
     pass
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = 'Private.'
 __name__ = 'c4d.internals'
 __package__ = None

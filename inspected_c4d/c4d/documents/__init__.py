@@ -1,4 +1,4 @@
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def AddMarker(*args, **kwargs):
     pass
@@ -56,14 +56,14 @@ def SetDocumentTime(*args, **kwargs):
 
 def StopExternalRenderer(*args, **kwargs):
     pass
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 BaseDocument
 BatchRender
 LayerObject
 RenderData
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = 'Module for document handling.'
 __name__ = 'c4d.documents'
 __package__ = None

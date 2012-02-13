@@ -1,4 +1,4 @@
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def ActiveObjectManager_SetObject(*args, **kwargs):
     pass
@@ -101,7 +101,7 @@ def UnregisterIcon(*args, **kwargs):
 
 def UpdateMenus(*args, **kwargs):
     pass
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 BaseCustomGui
 BitmapButtonCustomGui
@@ -119,7 +119,7 @@ SubDialog
 TreeViewCustomGui
 TreeViewFunctions
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = 'A module to create custom dialogs.'
 __name__ = 'c4d.gui'
 __package__ = None

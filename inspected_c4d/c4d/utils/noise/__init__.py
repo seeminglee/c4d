@@ -1,4 +1,4 @@
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def Noise(*args, **kwargs):
     pass
@@ -14,11 +14,11 @@ def Turbulence(*args, **kwargs):
 
 def WavyTurbulence(*args, **kwargs):
     pass
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 C4DNoise
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = ''
 __name__ = 'c4d.utils.noise'
 __package__ = None

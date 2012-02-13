@@ -1,11 +1,11 @@
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def InitResourceBitmap(*args, **kwargs):
     pass
 
 def ShowBitmap(*args, **kwargs):
     pass
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 BaseBitmap
 ColorProfile
@@ -14,7 +14,7 @@ MovieLoader
 MovieSaver
 MultipassBitmap
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = 'The module for bitmaps.'
 __name__ = 'c4d.bitmaps'
 __package__ = None

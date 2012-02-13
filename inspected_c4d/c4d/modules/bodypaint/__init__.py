@@ -1,4 +1,4 @@
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def BPSetupWizardWithParameters(*args, **kwargs):
     pass
@@ -11,7 +11,7 @@ def PainterActivateChannel(*args, **kwargs):
 
 def SendPainterCommand(*args, **kwargs):
     pass
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 PaintBitmap
 PaintLayer
@@ -21,7 +21,7 @@ PaintLayerMask
 PaintMaterial
 PaintTexture
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = 'The module for BodyPaint 3D.'
 __name__ = 'c4d.modules.bodypaint'
 __package__ = None

@@ -2,12 +2,12 @@
 """
 c4d.bitmaps.MultipassBitmap
 
-Auto-generated stub by inspect_c4d
+Important: these are not real files. They are automatically generated to
+ease code completion only.
 """
 
 class MultipassBitmap(object):
     def __init__(self, *args, **kwargs):
-
         pass
 
 

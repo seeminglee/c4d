@@ -1,4 +1,4 @@
-# Builtin Functions----------
+# Functions --------------------------------------------------
 
 def GeCheckBackgroundThreadsRunning(*args, **kwargs):
     pass
@@ -29,12 +29,12 @@ def GeThreadUnlock(*args, **kwargs):
 
 def IdentifyThread(*args, **kwargs):
     pass
-# Classes------------
+# Classes ----------------------------------------------------
 '''
 BaseThread
 C4DThread
 '''
-# Others-------------
+# Everything else --------------------------------------------
 __doc__ = "Returns a unique ID for the current thread. Usally you don't have to care about this."
 __name__ = 'c4d.threading'
 __package__ = None

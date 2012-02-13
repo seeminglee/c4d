@@ -2,12 +2,12 @@
 """
 c4d.plugins.FalloffData
 
-Auto-generated stub by inspect_c4d
+Important: these are not real files. They are automatically generated to
+ease code completion only.
 """
 
 class FalloffData(object):
     def __init__(self, *args, **kwargs):
-
         pass
 
 
