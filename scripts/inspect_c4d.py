@@ -62,10 +62,8 @@ class {classname}(object):
 {classes}
 {methods}
 '''
-fmt_class_nomembers = '''
-        pass'''
-fmt_class_member = '''
-        self.{name} = {value!r}'''
+fmt_class_nomembers = '        pass'
+fmt_class_member    = '        self.{name} = {value!r}'
 fmt_class_method = '''
     def {methodname}(self, *args, **kwargs):
         pass'''
@@ -145,6 +143,7 @@ def write_module(module):
     modules = []
     functions = []
     classes = []
+    constants = []
     others = []
 
     for name, value in inspect.getmembers(module):
@@ -155,11 +154,14 @@ def write_module(module):
         elif inspect.isclass(value):
             classes.append((name, value))
         else:
-            others.append((name, value))
+            if name.upper() == name:
+                constants.append((name, value))
+            else:
+                others.append((name, value))
 
     out = []
     if modules:
-        out.append('# Modules-----------')
+        out.append('# {0:-<60}'.format('Modules '))
         out.append("'"*3)
         for m in modules:
             out.append(m)
@@ -169,22 +171,28 @@ def write_module(module):
         out.append("'"*3)
 
     if functions:      
-        out.append('# Builtin Functions----------')
+        out.append('# {0:-<60}'.format('Functions '))
         for name in functions:
             out.append(s_function(name))
 
     if classes:
-        out.append('# Classes------------')
+        out.append('# {0:-<60}'.format('Classes '))
         out.append("'"*3)
         for name, value in classes:
             out.append(name)
             write_class(module, name, value) # -----------------------WRITE
         out.append("'"*3)
-            
+    
+    if constants:
+        out.append('# {0:-<60}'.format('Constants '))
+        for name, value in constants:
+            out.append(fmt_constants.format(name=name, value=value))
+                    
     if others:
-        out.append('# Others-------------')
+        out.append('# {0:-<60}'.format('Everything else '))
         for name, value in others:
             out.append(fmt_constants.format(name=name, value=value))
+
 
     mpath = modulepath(module)
     if not os.path.exists(mpath):
