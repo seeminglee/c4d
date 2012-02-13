@@ -7,6 +7,9 @@ ease code completion only.
 """
 
 class BitmapSaverData(object):
+    """
+    A class for creating bitmap savers.
+    """
     def __init__(self, *args, **kwargs):
         pass
 

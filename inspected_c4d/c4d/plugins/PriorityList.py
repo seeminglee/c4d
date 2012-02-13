@@ -7,9 +7,15 @@ ease code completion only.
 """
 
 class PriorityList(object):
+    """
+    Useful helper for drawing objects.
+    """
     def __init__(self, *args, **kwargs):
         pass
 
 
     def Add(self, *args, **kwargs):
+        """
+        Adds an execution point.
+        """
         pass

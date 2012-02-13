@@ -7,14 +7,17 @@ ease code completion only.
 """
 
 class ChannelData(object):
+    """
+    Channel information class.
+    """
     def __init__(self, *args, **kwargs):
-        self.d = <attribute 'd' of 'c4d.modules.render.ChannelData' objects>
-        self.n = <attribute 'n' of 'c4d.modules.render.ChannelData' objects>
-        self.off = <attribute 'off' of 'c4d.modules.render.ChannelData' objects>
-        self.p = <attribute 'p' of 'c4d.modules.render.ChannelData' objects>
-        self.scale = <attribute 'scale' of 'c4d.modules.render.ChannelData' objects>
-        self.t = <attribute 't' of 'c4d.modules.render.ChannelData' objects>
-        self.texflag = <attribute 'texflag' of 'c4d.modules.render.ChannelData' objects>
-        self.vd = <attribute 'vd' of 'c4d.modules.render.ChannelData' objects>
+        self.d = None
+        self.n = None
+        self.off = None
+        self.p = None
+        self.scale = None
+        self.t = None
+        self.texflag = None
+        self.vd = None
 
 

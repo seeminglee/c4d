@@ -7,6 +7,9 @@ ease code completion only.
 """
 
 class BaseCustomGui(object):
+    """
+    BaseCustomGui - Base class for custom guis.
+    """
     def __init__(self, *args, **kwargs):
         pass
 

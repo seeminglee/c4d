@@ -1,9 +1,15 @@
 # Functions --------------------------------------------------
 
 def InitResourceBitmap(*args, **kwargs):
+    """
+    Loads the global icon.
+    """
     pass
 
 def ShowBitmap(*args, **kwargs):
+    """
+    Display a bitmap image.
+    """
     pass
 # Classes ----------------------------------------------------
 '''

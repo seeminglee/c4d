@@ -1,18 +1,33 @@
 # Functions --------------------------------------------------
 
 def Noise(*args, **kwargs):
+    """
+    Generate a noise value.
+    """
     pass
 
 def PNoise(*args, **kwargs):
+    """
+    Generate a periodical noise value.
+    """
     pass
 
 def SNoise(*args, **kwargs):
+    """
+    Generate a signed noise value.
+    """
     pass
 
 def Turbulence(*args, **kwargs):
+    """
+    Generate a turbulence value.
+    """
     pass
 
 def WavyTurbulence(*args, **kwargs):
+    """
+    Generate a wavy turbulence value.
+    """
     pass
 # Classes ----------------------------------------------------
 '''

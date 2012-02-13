@@ -7,6 +7,9 @@ ease code completion only.
 """
 
 class ToolData(object):
+    """
+    A data class for creating tool plugins.
+    """
     def __init__(self, *args, **kwargs):
         pass
 

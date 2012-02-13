@@ -7,12 +7,21 @@ ease code completion only.
 """
 
 class Component(object):
+    """
+    Character Component
+    """
     def __init__(self, *args, **kwargs):
         pass
 
 
     def GetObject(self, *args, **kwargs):
+        """
+        Get the components BaseObject.
+        """
         pass
 
     def GetTemplate(self, *args, **kwargs):
+        """
+        Get the components Template.
+        """
         pass

@@ -7,134 +7,227 @@ ease code completion only.
 """
 
 class VolumeData(object):
+    """
+    Base volume data information class.
+    """
     def __init__(self, *args, **kwargs):
-        self.alpha = <attribute 'alpha' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.ambient = <attribute 'ambient' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.back_delta = <attribute 'back_delta' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.back_p = <attribute 'back_p' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.bumpn = <attribute 'bumpn' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.calc_illum = <attribute 'calc_illum' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.calc_mip = <attribute 'calc_mip' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.calc_refl = <attribute 'calc_refl' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.calc_shadow = <attribute 'calc_shadow' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.calc_trans = <attribute 'calc_trans' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.col = <attribute 'col' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.cosc = <attribute 'cosc' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.ddu = <attribute 'ddu' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.ddv = <attribute 'ddv' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.delta = <attribute 'delta' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.dispn = <attribute 'dispn' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.dist = <attribute 'dist' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.fps = <attribute 'fps' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.global_mip = <attribute 'global_mip' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.lhit = <attribute 'lhit' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.n = <attribute 'n' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.nn = <attribute 'nn' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.orign = <attribute 'orign' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.p = <attribute 'p' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.par_u = <attribute 'par_u' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.par_v = <attribute 'par_v' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.pp = <attribute 'pp' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.ray = <attribute 'ray' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.raybits = <attribute 'raybits' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.raydepth = <attribute 'raydepth' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.recursion_id = <attribute 'recursion_id' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.refl = <attribute 'refl' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.rray = <attribute 'rray' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.sid = <attribute 'sid' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.time = <attribute 'time' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.trans = <attribute 'trans' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.tray = <attribute 'tray' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.uvw = <attribute 'uvw' of 'c4d.modules.render.BaseVolumeData' objects>
-        self.version = <attribute 'version' of 'c4d.modules.render.BaseVolumeData' objects>
+        self.alpha = None
+        self.ambient = None
+        self.back_delta = None
+        self.back_p = None
+        self.bumpn = None
+        self.calc_illum = None
+        self.calc_mip = None
+        self.calc_refl = None
+        self.calc_shadow = None
+        self.calc_trans = None
+        self.col = None
+        self.cosc = None
+        self.ddu = None
+        self.ddv = None
+        self.delta = None
+        self.dispn = None
+        self.dist = None
+        self.fps = None
+        self.global_mip = None
+        self.lhit = None
+        self.n = None
+        self.nn = None
+        self.orign = None
+        self.p = None
+        self.par_u = None
+        self.par_v = None
+        self.pp = None
+        self.ray = None
+        self.raybits = None
+        self.raydepth = None
+        self.recursion_id = None
+        self.refl = None
+        self.rray = None
+        self.sid = None
+        self.time = None
+        self.trans = None
+        self.tray = None
+        self.uvw = None
+        self.version = None
 
 
     def CalcArea(self, *args, **kwargs):
+        """
+        Sample area lights.
+        """
         pass
 
     def CalcFgBg(self, *args, **kwargs):
+        """
+        Calculates the foreground or background.
+        """
         pass
 
     def CalcShadow(self, *args, **kwargs):
+        """
+        Computes the shadow.
+        """
         pass
 
     def CalcVisibleLight(self, *args, **kwargs):
+        """
+        Return the mixed color of all visible lights on a given ray span.
+        """
         pass
 
     def CameraToScreen(self, *args, **kwargs):
+        """
+        Transform screen to camera coordinates.
+        """
         pass
 
     def CopyTo(self, *args, **kwargs):
+        """
+        Copy this to another VolumeData.
+        """
         pass
 
     def FindVideoPost(self, *args, **kwargs):
+        """
+        Returns a video post effect for this render process by ID.
+        """
         pass
 
     def GetCPUCount(self, *args, **kwargs):
+        """
+        The cpu count.
+        """
         pass
 
     def GetCurrentCPU(self, *args, **kwargs):
+        """
+        The current cpu.
+        """
         pass
 
     def GetLight(self, *args, **kwargs):
+        """
+        Get the light source.
+        """
         pass
 
     def GetLightCount(self, *args, **kwargs):
+        """
+        The light count.
+        """
         pass
 
     def GetLightFalloff(self, *args, **kwargs):
+        """
+        Calculate the light falloff function.
+        """
         pass
 
     def GetObjCount(self, *args, **kwargs):
+        """
+        The object count.
+        """
         pass
 
     def GetRS(self, *args, **kwargs):
+        """
+        Calculate the R/S parameters for a point.
+        """
         pass
 
     def GetRay(self, *args, **kwargs):
+        """
+        Generate the view ray for a position.
+        """
         pass
 
     def GetSkyCount(self, *args, **kwargs):
+        """
+        The sky count.
+        """
         pass
 
     def GetSmoothedNormal(self, *args, **kwargs):
+        """
+        Returns the phong normal for a point.
+        """
         pass
 
     def GetVideoPost(self, *args, **kwargs):
+        """
+        Returns the n-th video post effect for this render process.
+        """
         pass
 
     def GetWeights(self, *args, **kwargs):
+        """
+        Returns barycentric coordinates for a point on the surface of a polygon.
+        """
         pass
 
     def GetXY(self, *args, **kwargs):
+        """
+        Returns the current X/Y pixel position in render resolution.
+        """
         pass
 
     def IlluminanceAnyPoint(self, *args, **kwargs):
+        """
+        Used for custom illumination models.
+        """
         pass
 
     def IlluminateSurfacePoint(self, *args, **kwargs):
+        """
+        Calculate the intensity of incoming light for a given light and surface point.
+        """
         pass
 
     def Init(self, *args, **kwargs):
+        """
+        Initializes the values of this object with values from another object.
+        """
         pass
 
     def OutOfMemory(self, *args, **kwargs):
+        """
+        Notify on out of memory.
+        """
         pass
 
     def ScreenToCamera(self, *args, **kwargs):
+        """
+        Transform camera to screen coordinates.
+        """
         pass
 
     def SetXY(self, *args, **kwargs):
+        """
+        Sets the current X/Y pixel position.
+        """
         pass
 
     def SkipRenderProcess(self, *args, **kwargs):
+        """
+        Skip the render process.
+        """
         pass
 
     def StatusSetBar(self, *args, **kwargs):
+        """
+        Set the progress bar
+        """
         pass
 
     def StatusSetSpinMode(self, *args, **kwargs):
+        """
+        Set the render progress bar spinning.
+        """
         pass
 
     def StatusSetText(self, *args, **kwargs):
+        """
+        Set the status bar text
+        """
         pass

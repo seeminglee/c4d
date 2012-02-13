@@ -7,6 +7,9 @@ ease code completion only.
 """
 
 class BaseData(object):
+    """
+    Base class for all plugin classes.
+    """
     def __init__(self, *args, **kwargs):
         pass
 

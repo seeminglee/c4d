@@ -1,15 +1,27 @@
 # Functions --------------------------------------------------
 
 def AddIncludeObject(*args, **kwargs):
+    """
+    [incdata,op,flags] : Add object to include container.
+    """
     pass
 
 def FindIncludeObject(*args, **kwargs):
+    """
+    [incdata,name] : Find object in include container.
+    """
     pass
 
 def GetComponentFlags(*args, **kwargs):
+    """
+    [bl] : Get component flags from an object/tag.
+    """
     pass
 
 def RemoveIncludeObject(*args, **kwargs):
+    """
+    [incdata,name] : Remove object from include container.
+    """
     pass
 # Classes ----------------------------------------------------
 '''

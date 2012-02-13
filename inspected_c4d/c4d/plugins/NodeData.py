@@ -7,12 +7,21 @@ ease code completion only.
 """
 
 class NodeData(object):
+    """
+    A class for creating node plugins.
+    """
     def __init__(self, *args, **kwargs):
         pass
 
 
     def GetDEnabling(self, *args, **kwargs):
+        """
+        Disable or enable parameter.
+        """
         pass
 
     def InitAttr(self, *args, **kwargs):
+        """
+        Initialize a value of an object.
+        """
         pass

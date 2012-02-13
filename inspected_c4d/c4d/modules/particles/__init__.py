@@ -1,6 +1,9 @@
 # Functions --------------------------------------------------
 
 def CalcParticleMatrix(*args, **kwargs):
+    """
+    Calculate the particles matrix
+    """
     pass
 # Classes ----------------------------------------------------
 '''

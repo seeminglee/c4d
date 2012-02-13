@@ -7,12 +7,21 @@ ease code completion only.
 """
 
 class DateTimeData(object):
+    """
+    DateTimeData Object
+    """
     def __init__(self, *args, **kwargs):
         pass
 
 
     def GetDateTime(self, *args, **kwargs):
+        """
+        Returns the datetime.
+        """
         pass
 
     def SetDateTime(self, *args, **kwargs):
+        """
+        Set the datetime.
+        """
         pass

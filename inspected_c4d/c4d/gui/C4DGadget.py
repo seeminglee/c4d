@@ -7,6 +7,9 @@ ease code completion only.
 """
 
 class C4DGadget(object):
+    """
+    C4DGadget - Dialog element.
+    """
     def __init__(self, *args, **kwargs):
         pass
 

@@ -7,6 +7,9 @@ ease code completion only.
 """
 
 class MessageData(object):
+    """
+    A data class for creating message plugins.
+    """
     def __init__(self, *args, **kwargs):
         pass
 

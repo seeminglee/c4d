@@ -19,7 +19,7 @@ License under CC-BY-SA Creative Commons Attribution Share-Alike 3.0
 Copyright (c) 2012 See-ming Lee, Crazyisgood. Some rights reserved.
 """
 
-START_PATH = '/Users/sml/Dropbox/prj/python_projects/c4d/scripts_dev/inspect'
+START_PATH = '/Users/sml/Dropbox/prj/python_projects/c4d/scripts_dev'
 
 # ----------------------------------------------------------------------------
 import c4d
@@ -41,10 +41,13 @@ def modulepath(module):
 fmt_constants = '{name} = {value!r}'
 
 fmt_function = '''
-def {0}(*args, **kwargs):
+def {name}(*args, **kwargs):
+    """
+    {docstring}
+    """
     pass'''
-def s_function(name):
-    return fmt_function.format(name)
+def s_function(name, docstring):
+    return fmt_function.format(name=name, docstring=docstring)
 
 # ----------------------------------------------------------------------------
 
@@ -57,18 +60,28 @@ ease code completion only.
 """
 
 class {classname}(object):
+    """
+    {docstring}
+    """
     def __init__(self, *args, **kwargs):
 {members}
 {classes}
 {methods}
 '''
 fmt_class_nomembers = '        pass'
-fmt_class_member    = '        self.{name} = {value!r}'
+#fmt_class_member    = '        self.{name} = {value!r}'
+fmt_class_member    = '        self.{name} = None'
 fmt_class_method = '''
     def {methodname}(self, *args, **kwargs):
+        """
+        {docstring}
+        """
         pass'''
 fmt_class_class = '''
     class {classname}(object):
+        """
+        {docstring}
+        """
         def __init__(self, *args, **kwargs):
             pass
 '''
@@ -91,15 +104,15 @@ def write_class(module, classname, classvalue):
     for name, value in inspect.getmembers(theclass):
         if not isprivateobj(name):
             if inspect.isclass(value):
-                classes.append(name)
+                classes.append((name, value))
             elif inspect.ismethod(value):
-                methods.append(name)
+                methods.append((name, value))
             elif inspect.isfunction(value):
-                functions.append(name)
+                functions.append((name, value))
             elif inspect.isbuiltin(value):
-                builtins.append(name)
+                builtins.append((name, value))
             elif inspect.ismethoddescriptor(value):
-                methoddescs.append(name)
+                methoddescs.append((name, value))
             else:
                 others.append((name, value))
 
@@ -108,15 +121,16 @@ def write_class(module, classname, classvalue):
     else:
         members = [fmt_class_member.format(name=n, value=v) for n, v in others]
 
-    s_classes = [fmt_class_class.format(classname=item) \
-                 for item in classes]
+    s_classes = [fmt_class_class.format(classname=name, docstring=value.__doc__) \
+                 for name, value in classes]
 
-    s_methods = [fmt_class_method.format(methodname=item) \
-                 for item in (methods + functions + builtins + methoddescs)]
+    s_methods = [fmt_class_method.format(methodname=name, docstring=value.__doc__) \
+                 for name, value in (methods + functions + builtins + methoddescs)]
 
     out = fmt_class.format(
         modulename = module.__name__,
         classname = classname,
+        docstring = theclass.__doc__,
         members = '\n'.join(members),
         classes = '\n'.join(s_classes),
         methods = '\n'.join(s_methods)                     
@@ -150,7 +164,7 @@ def write_module(module):
         if inspect.ismodule(value):
             modules.append(name)
         elif inspect.isbuiltin(value):
-            functions.append(name)
+            functions.append((name, value))
         elif inspect.isclass(value):
             classes.append((name, value))
         else:
@@ -172,8 +186,8 @@ def write_module(module):
 
     if functions:      
         out.append('# {0:-<60}'.format('Functions '))
-        for name in functions:
-            out.append(s_function(name))
+        for name, value in functions:
+            out.append(s_function(name, value.__doc__))
 
     if classes:
         out.append('# {0:-<60}'.format('Classes '))

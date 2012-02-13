@@ -7,9 +7,12 @@ ease code completion only.
 """
 
 class HandleInfo(object):
+    """
+    Handle type.
+    """
     def __init__(self, *args, **kwargs):
-        self.direction = <attribute 'direction' of 'c4d.HandleInfo' objects>
-        self.position = <attribute 'position' of 'c4d.HandleInfo' objects>
-        self.type = <attribute 'type' of 'c4d.HandleInfo' objects>
+        self.direction = None
+        self.position = None
+        self.type = None
 
 

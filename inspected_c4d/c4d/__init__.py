@@ -13,180 +13,357 @@ utils
 # Functions --------------------------------------------------
 
 def CallButton(*args, **kwargs):
+    """
+    Calls the button of a given object.
+    """
     pass
 
 def CallCommand(*args, **kwargs):
+    """
+    Call Command
+    """
     pass
 
 def CheckIsRunning(*args, **kwargs):
+    """
+    Check if a task is running.
+    """
     pass
 
 def CopyBitmapToClipboard(*args, **kwargs):
+    """
+    Copies a bitmap to the clipboard.
+    """
     pass
 
 def CopyStringToClipboard(*args, **kwargs):
+    """
+    Copies a text to the clipboard.
+    """
     pass
 
 def DrawViews(*args, **kwargs):
+    """
+    Redraw the editor views.
+    """
     pass
 
 def EventAdd(*args, **kwargs):
+    """
+    Adds a global event to the event queue.
+    """
     pass
 
 def FindInManager(*args, **kwargs):
+    """
+    Finds and makes bl visible in its manager.
+    """
     pass
 
 def FlushUnusedTextures(*args, **kwargs):
+    """
+    Flush all unused textures.
+    """
     pass
 
 def GeGetByteOrder(*args, **kwargs):
+    """
+    Get the byte order for the platform.
+    """
     pass
 
 def GeGetCurrentOS(*args, **kwargs):
+    """
+    Get the type of OS that is running CINEMA 4D.
+    """
     pass
 
 def GeGetGray(*args, **kwargs):
+    """
+    Get the default color gray.
+    """
     pass
 
 def GeGetLanguage(*args, **kwargs):
+    """
+    Can be used to enumerate information.
+    """
     pass
 
 def GeGetMilliSeconds(*args, **kwargs):
+    """
+    Get the current timer count in milliseconds.
+    """
     pass
 
 def GeGetSerialInfo(*args, **kwargs):
+    """
+    Returns a the user's registration info.
+    """
     pass
 
 def GeGetSystemInfo(*args, **kwargs):
+    """
+    Gets system information flags.
+    """
     pass
 
 def GeGetTimer(*args, **kwargs):
+    """
+    Get the current timer count in milliseconds.
+    """
     pass
 
 def GeGetVersionType(*args, **kwargs):
+    """
+    Get version type of CINEMA 4D.
+    """
     pass
 
 def GeIsActiveToolEnabled(*args, **kwargs):
+    """
+    Check if the active tool is enabled.
+    """
     pass
 
 def GePluginMessage(*args, **kwargs):
+    """
+    Sends a plugin message to other plugins.
+    """
     pass
 
 def GePrint(*args, **kwargs):
+    """
+    Print a text to the standard console.
+    """
     pass
 
 def GeSyncMessage(*args, **kwargs):
+    """
+    Sends a synchronous event message.
+    """
     pass
 
 def GetAPIVersion(*args, **kwargs):
+    """
+    Returns the versionnumber of Python
+    """
     pass
 
 def GetBitmapFromClipboard(*args, **kwargs):
+    """
+    Get a bitmap from the clipboard.
+    """
     pass
 
 def GetC4DClipboardOwner(*args, **kwargs):
+    """
+    Get the owner ID of the clipboard.
+    """
     pass
 
 def GetC4DVersion(*args, **kwargs):
+    """
+    Get the version of CINEMA 4D that is running.
+    """
     pass
 
 def GetClipboardType(*args, **kwargs):
+    """
+    Get the type of the clipboard.
+    """
     pass
 
 def GetCommandHelp(*args, **kwargs):
+    """
+    Get the help string of a command.
+    """
     pass
 
 def GetCommandName(*args, **kwargs):
+    """
+    Gets the name of a command.
+    """
     pass
 
 def GetCustomDataTypeDefault(*args, **kwargs):
+    """
+    Returns default container for custom datatypes
+    """
     pass
 
 def GetCustomDatatypeDefault(*args, **kwargs):
+    """
+    Returns default container for custom datatypes
+    """
     pass
 
 def GetDefaultFPS(*args, **kwargs):
+    """
+    Get the default frames per second value.
+    """
     pass
 
 def GetGlobalTexturePath(*args, **kwargs):
+    """
+    Get the global texture path.
+    """
     pass
 
 def GetMachineFeatures(*args, **kwargs):
+    """
+    Get the features of the computer.
+    """
     pass
 
 def GetObjectName(*args, **kwargs):
+    """
+    Returns the standard name of a tag.
+    """
     pass
 
 def GetObjectType(*args, **kwargs):
+    """
+    Returns an object type from an object name.
+    """
     pass
 
 def GetStringFromClipboard(*args, **kwargs):
+    """
+    Get a string from the clipboard.
+    """
     pass
 
 def GetTagName(*args, **kwargs):
+    """
+    Returns the standard name of an object.
+    """
     pass
 
 def GetViewColor(*args, **kwargs):
+    """
+    Get one of the main CINEMA 4D colors.
+    """
     pass
 
 def GetWorldContainer(*args, **kwargs):
+    """
+    Get the main CINEMA 4D settings container.
+    """
     pass
 
 def GetWorldContainerInstance(*args, **kwargs):
+    """
+    Returns the original reference.
+    """
     pass
 
 def IsCommandChecked(*args, **kwargs):
+    """
+    Checks if a command is checked.
+    """
     pass
 
 def IsCommandEnabled(*args, **kwargs):
+    """
+    Checks if a command is enabled.
+    """
     pass
 
 def PrefsLib_OpenDialog(*args, **kwargs):
+    """
+    Opens the preference dialog.
+    """
     pass
 
 def RestartMe(*args, **kwargs):
+    """
+    Private.
+    """
     pass
 
 def SendCoreMessage(*args, **kwargs):
+    """
+    Sends a core message.
+    """
     pass
 
 def SetGlobalTexturePath(*args, **kwargs):
+    """
+    Set the global texture path.
+    """
     pass
 
 def SetViewColor(*args, **kwargs):
+    """
+    Set one of the main CINEMA 4D colors.
+    """
     pass
 
 def SetWorldContainer(*args, **kwargs):
+    """
+    Set the main CINEMA 4D settings container.
+    """
     pass
 
 def SpecialEventAdd(*args, **kwargs):
+    """
+    Adds a custom event.
+    """
     pass
 
 def StartEditorRender(*args, **kwargs):
+    """
+    Start Editor Render.
+    """
     pass
 
 def StatusClear(*args, **kwargs):
+    """
+    Clears StatusBar.
+    """
     pass
 
 def StatusSetBar(*args, **kwargs):
+    """
+    Set Status Percentage.
+    """
     pass
 
 def StatusSetSpin(*args, **kwargs):
+    """
+    Set the status bar progress.
+    """
     pass
 
 def StatusSetText(*args, **kwargs):
+    """
+    Set StatusText
+    """
     pass
 
 def StopAllThreads(*args, **kwargs):
+    """
+    Stop all running threads.
+    """
     pass
 
 def stderr_write(*args, **kwargs):
+    """
+    The stderr file object.
+    """
     pass
 
 def stdin_read(*args, **kwargs):
+    """
+    The stdin file object.
+    """
     pass
 
 def stdout_write(*args, **kwargs):
+    """
+    The stdout file object.
+    """
     pass
 # Classes ----------------------------------------------------
 '''

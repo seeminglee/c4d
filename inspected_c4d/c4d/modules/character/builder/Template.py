@@ -7,15 +7,27 @@ ease code completion only.
 """
 
 class Template(object):
+    """
+    Character Template
+    """
     def __init__(self, *args, **kwargs):
         pass
 
 
     def FindComponent(self, *args, **kwargs):
+        """
+        [name,ident] : Find component within template.
+        """
         pass
 
     def FindObject(self, *args, **kwargs):
+        """
+        [name] : Find object within template.
+        """
         pass
 
     def GetDocument(self, *args, **kwargs):
+        """
+        Get the templates BaseDocument.
+        """
         pass

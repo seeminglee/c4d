@@ -7,6 +7,9 @@ ease code completion only.
 """
 
 class TreeViewFunctions(object):
+    """
+    TreeViewFunctions Class
+    """
     def __init__(self, *args, **kwargs):
         pass
 

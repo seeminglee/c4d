@@ -7,6 +7,9 @@ ease code completion only.
 """
 
 class BitmapLoaderData(object):
+    """
+    A class for creating bitmap loaders.
+    """
     def __init__(self, *args, **kwargs):
         pass
 

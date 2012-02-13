@@ -7,9 +7,12 @@ ease code completion only.
 """
 
 class DescLevel(object):
+    """
+    Represents a level in DescID.
+    """
     def __init__(self, *args, **kwargs):
-        self.creator = <attribute 'creator' of 'c4d.DescLevel' objects>
-        self.dtype = <attribute 'dtype' of 'c4d.DescLevel' objects>
-        self.id = <attribute 'id' of 'c4d.DescLevel' objects>
+        self.creator = None
+        self.dtype = None
+        self.id = None
 
 
