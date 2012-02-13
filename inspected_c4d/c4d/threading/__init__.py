@@ -1,3 +1,18 @@
+#!/usr/bin/env python
+"""
+c4d.threading
+
+Returns a unique ID for the current thread. Usally you don't have to care about this.
+
+
+Classes:
+    c4d.threading.BaseThread
+    c4d.threading.C4DThread
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def GeCheckBackgroundThreadsRunning(*args, **kwargs):
@@ -59,12 +74,3 @@ def IdentifyThread(*args, **kwargs):
     Identifies a thread's type.
     """
     pass
-# Classes ----------------------------------------------------
-'''
-BaseThread
-C4DThread
-'''
-# Everything else --------------------------------------------
-__doc__ = "Returns a unique ID for the current thread. Usally you don't have to care about this."
-__name__ = 'c4d.threading'
-__package__ = None

@@ -1,3 +1,15 @@
+#!/usr/bin/env python
+"""
+c4d.internals
+
+Private.
+
+
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def CheckOwnership(*args, **kwargs):
@@ -83,7 +95,3 @@ def SetOwnership(*args, **kwargs):
     Set the ownership of a C4DAtom object.
     """
     pass
-# Everything else --------------------------------------------
-__doc__ = 'Private.'
-__name__ = 'c4d.internals'
-__package__ = None

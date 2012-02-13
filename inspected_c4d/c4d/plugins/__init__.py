@@ -1,3 +1,33 @@
+#!/usr/bin/env python
+"""
+c4d.plugins
+
+This module helps you to create plugins.
+
+
+Classes:
+    c4d.plugins.BaseData
+    c4d.plugins.BaseDrawHelp
+    c4d.plugins.BasePlugin
+    c4d.plugins.BitmapLoaderData
+    c4d.plugins.BitmapSaverData
+    c4d.plugins.CommandData
+    c4d.plugins.FalloffData
+    c4d.plugins.GeResource
+    c4d.plugins.MessageData
+    c4d.plugins.NodeData
+    c4d.plugins.ObjectData
+    c4d.plugins.PriorityList
+    c4d.plugins.SceneLoaderData
+    c4d.plugins.SceneSaverData
+    c4d.plugins.ShaderData
+    c4d.plugins.TagData
+    c4d.plugins.ToolData
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def FilterPluginList(*args, **kwargs):
@@ -173,27 +203,3 @@ def WriteRegInfo(*args, **kwargs):
     Write private serial information for a plugin.
     """
     pass
-# Classes ----------------------------------------------------
-'''
-BaseData
-BaseDrawHelp
-BasePlugin
-BitmapLoaderData
-BitmapSaverData
-CommandData
-FalloffData
-GeResource
-MessageData
-NodeData
-ObjectData
-PriorityList
-SceneLoaderData
-SceneSaverData
-ShaderData
-TagData
-ToolData
-'''
-# Everything else --------------------------------------------
-__doc__ = 'This module helps you to create plugins.'
-__name__ = 'c4d.plugins'
-__package__ = None

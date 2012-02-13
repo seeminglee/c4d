@@ -1,3 +1,18 @@
+#!/usr/bin/env python
+"""
+c4d.modules.mograph
+
+Module for MoGraph.
+
+
+Classes:
+    c4d.modules.mograph.FalloffDataData
+    c4d.modules.mograph.MoData
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def GeGetMoData(*args, **kwargs):
@@ -17,12 +32,3 @@ def GetMoDataDefaultType(*args, **kwargs):
     Get the default type for the specified MoData ID.
     """
     pass
-# Classes ----------------------------------------------------
-'''
-FalloffDataData
-MoData
-'''
-# Everything else --------------------------------------------
-__doc__ = 'Module for MoGraph.'
-__name__ = 'c4d.modules.mograph'
-__package__ = None

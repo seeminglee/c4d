@@ -1,15 +1,71 @@
-# Modules ----------------------------------------------------
-'''
-bitmaps
-documents
-gui
-internals
-modules
-plugins
-storage
-threading
-utils
-'''
+#!/usr/bin/env python
+"""
+c4d
+
+Common module for the most required classes and functions.
+
+Modules:
+    c4d.bitmaps
+    c4d.documents
+    c4d.gui
+    c4d.internals
+    c4d.modules
+    c4d.plugins
+    c4d.storage
+    c4d.threading
+    c4d.utils
+
+Classes:
+    c4d.BaseContainer
+    c4d.BaseDraw
+    c4d.BaseList2D
+    c4d.BaseMaterial
+    c4d.BaseObject
+    c4d.BaseSelect
+    c4d.BaseShader
+    c4d.BaseTag
+    c4d.BaseTime
+    c4d.BaseView
+    c4d.C4DAtom
+    c4d.CCurve
+    c4d.CKey
+    c4d.CPolygon
+    c4d.CTrack
+    c4d.CameraObject
+    c4d.CustomDataType
+    c4d.DateTimeData
+    c4d.DescID
+    c4d.DescLevel
+    c4d.FontData
+    c4d.GeListNode
+    c4d.Gradient
+    c4d.HandleInfo
+    c4d.InExcludeData
+    c4d.LayerSet
+    c4d.LineObject
+    c4d.MatAssignData
+    c4d.Matrix
+    c4d.NormalTag
+    c4d.PointObject
+    c4d.PointTag
+    c4d.PolygonObject
+    c4d.PolygonTag
+    c4d.PriorityData
+    c4d.SegmentTag
+    c4d.SelectionTag
+    c4d.SplineData
+    c4d.SplineObject
+    c4d.TangentTag
+    c4d.TextureTag
+    c4d.UVWTag
+    c4d.UnitScaleData
+    c4d.VariableTag
+    c4d.Vector
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def CallButton(*args, **kwargs):
@@ -365,54 +421,6 @@ def stdout_write(*args, **kwargs):
     The stdout file object.
     """
     pass
-# Classes ----------------------------------------------------
-'''
-BaseContainer
-BaseDraw
-BaseList2D
-BaseMaterial
-BaseObject
-BaseSelect
-BaseShader
-BaseTag
-BaseTime
-BaseView
-C4DAtom
-CCurve
-CKey
-CPolygon
-CTrack
-CameraObject
-CustomDataType
-DateTimeData
-DescID
-DescLevel
-FontData
-GeListNode
-Gradient
-HandleInfo
-InExcludeData
-LayerSet
-LineObject
-MatAssignData
-Matrix
-NormalTag
-PointObject
-PointTag
-PolygonObject
-PolygonTag
-PriorityData
-SegmentTag
-SelectionTag
-SplineData
-SplineObject
-TangentTag
-TextureTag
-UVWTag
-UnitScaleData
-VariableTag
-Vector
-'''
 # Constants --------------------------------------------------
 ACCEPT_DRAG_OBJECT_FORCE_COPY = 1073741824
 ACTIVEOBJECTMANAGER_SETOBJECTS_NOMODESWITCH = 2
@@ -24027,8 +24035,5 @@ ZipMethodDeflate = 0
 ZipMethodStore = 1
 Zmultipass = 300001048
 Zplugin = 110062
-__doc__ = 'Common module for the most required classes and functions.'
-__name__ = 'c4d'
-__package__ = None
 blend_data_dummy = 0
 ddumdumdimdum = 5

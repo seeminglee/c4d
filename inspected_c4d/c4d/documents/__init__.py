@@ -1,3 +1,20 @@
+#!/usr/bin/env python
+"""
+c4d.documents
+
+Module for document handling.
+
+
+Classes:
+    c4d.documents.BaseDocument
+    c4d.documents.BatchRender
+    c4d.documents.LayerObject
+    c4d.documents.RenderData
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def AddMarker(*args, **kwargs):
@@ -113,14 +130,3 @@ def StopExternalRenderer(*args, **kwargs):
     Stop the external renderer.
     """
     pass
-# Classes ----------------------------------------------------
-'''
-BaseDocument
-BatchRender
-LayerObject
-RenderData
-'''
-# Everything else --------------------------------------------
-__doc__ = 'Module for document handling.'
-__name__ = 'c4d.documents'
-__package__ = None

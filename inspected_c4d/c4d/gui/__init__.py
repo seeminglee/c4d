@@ -1,3 +1,31 @@
+#!/usr/bin/env python
+"""
+c4d.gui
+
+A module to create custom dialogs.
+
+
+Classes:
+    c4d.gui.BaseCustomGui
+    c4d.gui.BitmapButtonCustomGui
+    c4d.gui.C4DGadget
+    c4d.gui.DateTimeControl
+    c4d.gui.EditorWindow
+    c4d.gui.GeDialog
+    c4d.gui.GeUserArea
+    c4d.gui.GradientCustomGui
+    c4d.gui.HtmlViewerCustomGui
+    c4d.gui.LinkBoxGui
+    c4d.gui.QuickTabCustomGui
+    c4d.gui.SplineCustomGui
+    c4d.gui.SubDialog
+    c4d.gui.TreeViewCustomGui
+    c4d.gui.TreeViewFunctions
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def ActiveObjectManager_SetObject(*args, **kwargs):
@@ -203,25 +231,3 @@ def UpdateMenus(*args, **kwargs):
     Forces a menu update.
     """
     pass
-# Classes ----------------------------------------------------
-'''
-BaseCustomGui
-BitmapButtonCustomGui
-C4DGadget
-DateTimeControl
-EditorWindow
-GeDialog
-GeUserArea
-GradientCustomGui
-HtmlViewerCustomGui
-LinkBoxGui
-QuickTabCustomGui
-SplineCustomGui
-SubDialog
-TreeViewCustomGui
-TreeViewFunctions
-'''
-# Everything else --------------------------------------------
-__doc__ = 'A module to create custom dialogs.'
-__name__ = 'c4d.gui'
-__package__ = None

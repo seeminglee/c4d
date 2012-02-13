@@ -1,3 +1,17 @@
+#!/usr/bin/env python
+"""
+c4d.utils.noise
+
+
+
+
+Classes:
+    c4d.utils.noise.C4DNoise
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def Noise(*args, **kwargs):
@@ -29,11 +43,3 @@ def WavyTurbulence(*args, **kwargs):
     Generate a wavy turbulence value.
     """
     pass
-# Classes ----------------------------------------------------
-'''
-C4DNoise
-'''
-# Everything else --------------------------------------------
-__doc__ = ''
-__name__ = 'c4d.utils.noise'
-__package__ = None

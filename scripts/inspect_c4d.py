@@ -150,7 +150,18 @@ def write_class(module, classname, classvalue):
         print "IOError"
 
 # ----------------------------------------------------------------------------
+fmt_module= '''#!/usr/bin/env python
+"""
+{modulename}
 
+{docstring}
+{modules}
+{classes}
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+'''
 
 def write_module(module):
 
@@ -161,42 +172,49 @@ def write_module(module):
     others = []
 
     for name, value in inspect.getmembers(module):
-        if inspect.ismodule(value):
-            modules.append(name)
-        elif inspect.isbuiltin(value):
-            functions.append((name, value))
-        elif inspect.isclass(value):
-            classes.append((name, value))
-        else:
-            if name.upper() == name:
-                constants.append((name, value))
+        if not isprivateobj(name):
+            if inspect.ismodule(value):
+                modules.append(name)
+            elif inspect.isbuiltin(value):
+                functions.append((name, value))
+            elif inspect.isclass(value):
+                classes.append((name, value))
             else:
-                others.append((name, value))
+                if name.upper() == name:
+                    constants.append((name, value))
+                else:
+                    others.append((name, value))
 
     out = []
+
+    out_modules = []
     if modules:
-        out.append('# {0:-<60}'.format('Modules '))
-        out.append("'"*3)
+        out_modules.append('\nModules:')
         for m in modules:
-            out.append(m)
-            evalm = '{0}.{1}'.format(module.__name__, m)
-            evalm = eval(evalm)
+            fullname = '{0}.{1}'.format(module.__name__, m)
+            out_modules.append('    {0}'.format(fullname))
+            evalm = eval(fullname)
             write_module(evalm) # ------------------------------------WRITE
-        out.append("'"*3)
+
+    out_classes = []
+    if classes:
+        out_classes.append('\nClasses:')
+        for name, value in classes:
+            fullname = '{0}.{1}'.format(module.__name__, name)
+            out_classes.append('    {0}'.format(fullname))
+            write_class(module, name, value) # -----------------------WRITE
+
+    out.append(fmt_module.format(
+            modulename = module.__name__, 
+            docstring = module.__doc__,
+            modules = '\n'.join(out_modules),
+            classes = '\n'.join(out_classes)))
 
     if functions:      
         out.append('# {0:-<60}'.format('Functions '))
         for name, value in functions:
             out.append(s_function(name, value.__doc__))
-
-    if classes:
-        out.append('# {0:-<60}'.format('Classes '))
-        out.append("'"*3)
-        for name, value in classes:
-            out.append(name)
-            write_class(module, name, value) # -----------------------WRITE
-        out.append("'"*3)
-    
+                
     if constants:
         out.append('# {0:-<60}'.format('Constants '))
         for name, value in constants:

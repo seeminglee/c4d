@@ -1,3 +1,19 @@
+#!/usr/bin/env python
+"""
+c4d.storage
+
+Module to access a data storage device.
+
+
+Classes:
+    c4d.storage.ByteSeq
+    c4d.storage.HyperFile
+    c4d.storage.MemoryFileStruct
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def GeExecuteFile(*args, **kwargs):
@@ -95,13 +111,3 @@ def WriteHyperFile(*args, **kwargs):
     Writes a single list node to disk as a hyper file.
     """
     pass
-# Classes ----------------------------------------------------
-'''
-ByteSeq
-HyperFile
-MemoryFileStruct
-'''
-# Everything else --------------------------------------------
-__doc__ = 'Module to access a data storage device.'
-__name__ = 'c4d.storage'
-__package__ = None

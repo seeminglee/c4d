@@ -1,14 +1,24 @@
-# Modules ----------------------------------------------------
-'''
-bodypaint
-character
-graphview
-hair
-mograph
-particles
-render
-thinkingparticles
-'''
+#!/usr/bin/env python
+"""
+c4d.modules
+
+
+
+Modules:
+    c4d.modules.bodypaint
+    c4d.modules.character
+    c4d.modules.graphview
+    c4d.modules.hair
+    c4d.modules.mograph
+    c4d.modules.particles
+    c4d.modules.render
+    c4d.modules.thinkingparticles
+
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def CheckAR(*args, **kwargs):
@@ -52,7 +62,3 @@ def CheckTP(*args, **kwargs):
     Check if 'Thinking Particles' is installed.
     """
     pass
-# Everything else --------------------------------------------
-__doc__ = ''
-__name__ = 'c4d.modules'
-__package__ = None

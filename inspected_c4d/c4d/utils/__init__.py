@@ -1,7 +1,23 @@
-# Modules ----------------------------------------------------
-'''
-noise
-'''
+#!/usr/bin/env python
+"""
+c4d.utils
+
+
+
+Modules:
+    c4d.utils.noise
+
+Classes:
+    c4d.utils.GeRayCollider
+    c4d.utils.Neighbor
+    c4d.utils.SplineHelp
+    c4d.utils.SplineLengthData
+    c4d.utils.ViewportSelect
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def Bias(*args, **kwargs):
@@ -309,15 +325,3 @@ def VectorToHPB(*args, **kwargs):
     Calculate euler angles from the vector p.
     """
     pass
-# Classes ----------------------------------------------------
-'''
-GeRayCollider
-Neighbor
-SplineHelp
-SplineLengthData
-ViewportSelect
-'''
-# Everything else --------------------------------------------
-__doc__ = ''
-__name__ = 'c4d.utils'
-__package__ = None

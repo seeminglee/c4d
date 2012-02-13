@@ -1,3 +1,20 @@
+#!/usr/bin/env python
+"""
+c4d.modules.graphview
+
+Module for graphview.
+
+
+Classes:
+    c4d.modules.graphview.GvNode
+    c4d.modules.graphview.GvNodeMaster
+    c4d.modules.graphview.GvPort
+    c4d.modules.graphview.XPressoTag
+
+Important: these are not real files. They are automatically generated to
+ease code completion only.
+"""
+
 # Functions --------------------------------------------------
 
 def CloseDialog(*args, **kwargs):
@@ -41,14 +58,3 @@ def SetPrefs(*args, **kwargs):
     Sets the preferences for this world.
     """
     pass
-# Classes ----------------------------------------------------
-'''
-GvNode
-GvNodeMaster
-GvPort
-XPressoTag
-'''
-# Everything else --------------------------------------------
-__doc__ = 'Module for graphview.'
-__name__ = 'c4d.modules.graphview'
-__package__ = None
